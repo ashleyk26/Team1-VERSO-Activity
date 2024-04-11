@@ -6,12 +6,15 @@ int main()
     int sum_even = 0;
     while (b < 4000000) {
         if (b % 2 == 0) {
+            // Adds b to sum_even when b is even
             sum_even += b;
         }
         int temp = b;
         b = a + b;
         a = temp;
     }
+
+    // Prints the answer
     std::cout << sum_even << std::endl;
 
     return 0;
